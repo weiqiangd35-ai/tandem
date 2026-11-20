@@ -1,0 +1,11 @@
+case | exact (P_F, P_D) | simulated (P_F, P_D) | deviation / standard error
+two-node running model, alpha = 0.075, N1 desynchronized | (0.07250, 0.56000) | (0.07265, 0.56023) | (+1.15, +0.94)
+two-node violating model, alpha = 0.21125, N1 desynchronized | (0.26750, 0.37188) | (0.26766, 0.37182) | (+0.74, -0.25)
+three-node running model, alpha = 0.078, N2 desynchronized | (0.10775, 0.64650) | (0.10780, 0.64631) | (+0.30, -0.78)
+three-node running model, alpha = 0.078, synchronized | (0.07800, 0.67800) | (0.07816, 0.67807) | (+1.20, +0.31)
+three-node running model, alpha = 0.1675, N1 desynchronized | (0.16525, 0.82400) | (0.16504, 0.82409) | (-1.13, +0.45)
+random eight-node chain (Dirichlet K = 3), nodes 2, 5, 7 desynchronized | (0.60759, 0.78644) | (0.60735, 0.78642) | (-0.99, -0.10)
+largest deviation: 1.20 standard errors over 12 estimates
+
+DFC monitoring, two-node running model, P0 = 0.9: synchronized rates (0.250, 0.150); simulated rates given Z = A / B: 0.2000 / 0.2000 (predicted 0.200 for both)
+moment estimator of p' over 400 repetitions of 20000 epochs (T_A = 9998): mean 0.4999, std 0.0395; formula 0.0433 (synchronized rate), 0.0400 (observed rate)

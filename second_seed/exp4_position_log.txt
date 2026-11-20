@@ -1,0 +1,19 @@
+exp4_position.py with rng: seed 1004 (instead of 4); output in results/second_seed
+done in 151.8s
+max |exact - eq.(14)| over all rows: 2.888314587501384e-16
+
+ensemble  k  count  median|dPF|  p90|dPF|  median bound  median prod(rho) downstream  frac zero
+randomk=1      300  0.00000   0.00088   0.00000     0.0125       0.48
+randomk=2      300  0.00008   0.00274   0.00024     0.0251       0.22
+randomk=3      300  0.00022   0.00526   0.00075     0.0519       0.27
+randomk=4      300  0.00053   0.00976   0.00211     0.0991       0.24
+randomk=5      300  0.00131   0.02186   0.00693     0.1791       0.25
+randomk=6      300  0.00340   0.03426   0.01934     0.3476       0.24
+randomk=7      300  0.00785   0.05627   0.06279     0.6231       0.26
+designk=1       14  0.00088   0.00726   0.00802     0.1490       0.14
+designk=2       31  0.00045   0.00951   0.01578     0.1578       0.26
+designk=3       21  0.00562   0.02790   0.02614     0.5973       0.14
+designk=4       23  0.00084   0.01816   0.03099     0.4750       0.13
+designk=5       21  0.00070   0.00773   0.02657     0.6414       0.29
+designk=6       14  0.00141   0.00971   0.04131     0.9560       0.14
+designk=7       15  0.00138   0.00956   0.06144     1.0000       0.20

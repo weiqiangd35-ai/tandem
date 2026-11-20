@@ -1,0 +1,138 @@
+{
+ "epochs_per_hypothesis": 4000000,
+ "operating_points": [
+  {
+   "case": "two-node running model, alpha = 0.075, N1 desynchronized",
+   "p": 0.5,
+   "S": [
+    1
+   ],
+   "exact": [
+    0.07250000000000001,
+    0.5599999999999999
+   ],
+   "simulated": [
+    0.07264875,
+    0.560233
+   ],
+   "z": [
+    1.1472577698018265,
+    0.9387837530897241
+   ]
+  },
+  {
+   "case": "two-node violating model, alpha = 0.21125, N1 desynchronized",
+   "p": 0.5,
+   "S": [
+    1
+   ],
+   "exact": [
+    0.26750000000000007,
+    0.371875
+   ],
+   "simulated": [
+    0.267664,
+    0.3718155
+   ],
+   "z": [
+    0.7409828152653138,
+    -0.24622119247105922
+   ]
+  },
+  {
+   "case": "three-node running model, alpha = 0.078, N2 desynchronized",
+   "p": 0.5,
+   "S": [
+    2
+   ],
+   "exact": [
+    0.10775000000000001,
+    0.6465
+   ],
+   "simulated": [
+    0.10779675,
+    0.64631375
+   ],
+   "z": [
+    0.3015502501968575,
+    -0.7791970567325045
+   ]
+  },
+  {
+   "case": "three-node running model, alpha = 0.078, synchronized",
+   "p": 0.5,
+   "S": [],
+   "exact": [
+    0.07800000000000001,
+    0.6779999999999999
+   ],
+   "simulated": [
+    0.078161,
+    0.6780715
+   ],
+   "z": [
+    1.2007237745356198,
+    0.30605061369334413
+   ]
+  },
+  {
+   "case": "three-node running model, alpha = 0.1675, N1 desynchronized",
+   "p": 0.4999999999999998,
+   "S": [
+    1
+   ],
+   "exact": [
+    0.16525,
+    0.824
+   ],
+   "simulated": [
+    0.1650405,
+    0.8240855
+   ],
+   "z": [
+    -1.128145395110911,
+    0.4490308407451766
+   ]
+  },
+  {
+   "case": "random eight-node chain (Dirichlet K = 3), nodes 2, 5, 7 desynchronized",
+   "p": 0.4,
+   "S": [
+    2,
+    5,
+    7
+   ],
+   "exact": [
+    0.6075915863640777,
+    0.7864406299064882
+   ],
+   "simulated": [
+    0.60735075,
+    0.7864205
+   ],
+   "z": [
+    -0.9864544283092993,
+    -0.09823798961316767
+   ]
+  }
+ ],
+ "estimator": {
+  "P0": 0.9,
+  "p_true": 0.5,
+  "repetitions": 400,
+  "epochs_per_repetition": 20000,
+  "mean_T_A": 9998.4575,
+  "sync_rates": [
+   0.25,
+   0.15
+  ],
+  "desync_rate": 0.2,
+  "mean_rate_A": 0.1999917150938871,
+  "mean_rate_B": 0.20002059387882418,
+  "p_hat_mean": 0.49991715093887107,
+  "p_hat_std": 0.03945696530480473,
+  "std_formula_sync_rate": 0.043304610186086126,
+  "std_formula_observed_rate": 0.040003085356941824
+ },
+ "max_abs_z": 1.2007237745356198
+}

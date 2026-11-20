@@ -1,0 +1,64 @@
+  running      n= 2 done (0s)
+  running      n= 3 done (1s)
+  running      n= 5 done (2s)
+  running      n=10 done (4s)
+  running      n=20 done (7s)
+  dirichlet3   n= 2 done (8s)
+  dirichlet3   n= 3 done (8s)
+  dirichlet3   n= 5 done (9s)
+  dirichlet3   n=10 done (11s)
+  dirichlet3   n=20 done (16s)
+  dirichlet5   n= 2 done (16s)
+  dirichlet5   n= 3 done (17s)
+  dirichlet5   n= 5 done (19s)
+  dirichlet5   n=10 done (22s)
+  dirichlet5   n=20 done (28s)
+  dirichlet10  n= 2 done (29s)
+  dirichlet10  n= 3 done (31s)
+  dirichlet10  n= 5 done (33s)
+  dirichlet10  n=10 done (39s)
+  dirichlet10  n=20 done (51s)
+  qgauss1      n= 2 done (52s)
+  qgauss1      n= 3 done (53s)
+  qgauss1      n= 5 done (55s)
+  qgauss1      n=10 done (59s)
+  qgauss1      n=20 done (68s)
+  qgauss2      n= 2 done (69s)
+  qgauss2      n= 3 done (70s)
+  qgauss2      n= 5 done (72s)
+  qgauss2      n=10 done (76s)
+  qgauss2      n=20 done (86s)
+replayed rows (random, adversarial) equal to results/exp1_rows.json: True (69000 rows)
+
+median end-to-end product of the greedy relay-like adversary, 1000 models per cell
+family        n   pure relay excluded      pure relay allowed       nodes that relay
+running         2   0.900 [0.900, 0.900]   0.900 [0.900, 0.900]   0.00
+running         3   0.810 [0.810, 0.810]   0.900 [0.900, 0.900]   0.50
+running         5   0.656 [0.656, 0.656]   0.900 [0.900, 0.900]   0.75
+running        10   0.387 [0.387, 0.387]   0.900 [0.900, 0.900]   0.89
+running        20   0.135 [0.135, 0.135]   0.900 [0.900, 0.900]   0.95
+dirichlet3      2   0.819 [0.806, 0.833]   0.926 [0.900, 0.943]   0.34
+dirichlet3      3   0.659 [0.649, 0.673]   0.794 [0.766, 0.817]   0.41
+dirichlet3      5   0.449 [0.436, 0.459]   0.701 [0.683, 0.719]   0.53
+dirichlet3     10   0.192 [0.183, 0.198]   0.597 [0.584, 0.621]   0.67
+dirichlet3     20   0.036 [0.034, 0.038]   0.552 [0.531, 0.573]   0.80
+dirichlet5      2   0.836 [0.817, 0.854]   0.854 [0.831, 0.869]   0.18
+dirichlet5      3   0.716 [0.699, 0.732]   0.747 [0.730, 0.765]   0.24
+dirichlet5      5   0.544 [0.529, 0.561]   0.622 [0.604, 0.641]   0.36
+dirichlet5     10   0.342 [0.332, 0.355]   0.498 [0.482, 0.517]   0.52
+dirichlet5     20   0.166 [0.160, 0.174]   0.474 [0.454, 0.493]   0.69
+dirichlet10     2   0.784 [0.770, 0.800]   0.784 [0.770, 0.800]   0.05
+dirichlet10     3   0.662 [0.649, 0.680]   0.662 [0.649, 0.680]   0.07
+dirichlet10     5   0.525 [0.512, 0.540]   0.535 [0.519, 0.547]   0.12
+dirichlet10    10   0.401 [0.391, 0.414]   0.432 [0.418, 0.446]   0.28
+dirichlet10    20   0.306 [0.294, 0.318]   0.370 [0.354, 0.384]   0.48
+qgauss1         2   0.819 [0.819, 0.819]   0.819 [0.819, 0.819]   0.00
+qgauss1         3   0.670 [0.670, 0.670]   0.670 [0.670, 0.670]   0.00
+qgauss1         5   0.524 [0.524, 0.524]   0.524 [0.524, 0.524]   0.00
+qgauss1        10   0.356 [0.356, 0.356]   0.356 [0.356, 0.356]   0.00
+qgauss1        20   0.302 [0.302, 0.302]   0.302 [0.302, 0.302]   0.00
+qgauss2         2   0.819 [0.819, 0.819]   0.819 [0.819, 0.819]   0.00
+qgauss2         3   0.670 [0.670, 0.670]   0.670 [0.670, 0.670]   0.00
+qgauss2         5   0.624 [0.624, 0.624]   0.624 [0.624, 0.624]   0.00
+qgauss2        10   0.590 [0.590, 0.590]   0.590 [0.590, 0.590]   0.00
+qgauss2        20   0.575 [0.575, 0.575]   0.575 [0.575, 0.575]   0.00

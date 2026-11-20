@@ -1,0 +1,9 @@
+exp8_sign_ensemble.py with rng: seed 1000 (instead of 0); output in results/second_seed
+N_models 5000
+K 3
+designs {'edges': 26839, 'counts': {'immune': 25000, 'fall': 927, 'rise': 912}, 'fractions': {'immune': 0.9314803085062782, 'fall': 0.0345392898394128, 'rise': 0.03398040165430903}}
+all_single_threshold_realization_pairs {'edges': 26839, 'realization_pairs': 46839, 'counts': {'unchanged': 39393, 'rise': 5257, 'fall': 2189}, 'fractions': {'unchanged': 0.8410299109716262, 'rise': 0.11223553022054271, 'fall': 0.04673455880783108}}
+all_pairs_including_trivial_edges {'edges': 36839, 'realization_pairs': 86839, 'counts': {'rise': 20257, 'unchanged': 49393, 'fall': 17189}, 'fractions': {'rise': 0.23327076543949146, 'unchanged': 0.568788217275648, 'fall': 0.1979410172848605}}
+proposition_7 {'susceptible realization pairs': 7446, 'realization pairs feasible': 7446, 'susceptible designs': 1839, 'trivial N1 rule': 0, 'regions nested as in Prop. 7': 1839, 'adjustment feasible': 1839, 'P_F restored to alpha': 1839}
+models_with_a_susceptible_edge 1839
+proposition_7_exact_arithmetic {'models': 20000, 'edges': 124229, 'pairs_with_a_trivial_N1_rule': 277549, 'trivial_alpha_between_LF_and_UF': 269953, 'pairs': 68668, 'regions_nested_as_in_prop7': 68668, 'alpha_between_LF_and_UF': 68668, 'one_dfc_ignores_its_message': 37396, 'PF_rises': 23312, 'PF_falls': 20843, 'qstar_in_unit_interval_and_exact': 44833, 'LF_equals_UF': 23835, 'LF_equals_UF_equals_alpha': 23835}

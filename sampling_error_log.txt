@@ -1,0 +1,212 @@
+=== exp1: attenuation statistics (Table SII) ===
+text. 92808 configurations: 21000 random, 11808 NP-optimal, 60000 adversarial; 597192 stages; largest |rho| - 1 = 2.2e-16; product transfer checked in 92808 of them, largest error 8.3e-16
+text. quantized Gaussian d' = 2, relay-like adversary at n = 20 (1000 chains): rho_F is 0.9973 (the relay except on the two extreme bins) or 0.9987 (one bin) in every chain from node 11 on; at node 10 in 854 chains
+A. relay-like adversary, median end-to-end product over the first 10, the first 100 and all 1000 models of a cell
+   dirichlet3  n =  2: 0.714  0.843  0.819
+   dirichlet3  n =  5: 0.392  0.453  0.449
+   dirichlet3  n = 10: 0.278  0.203  0.192
+   dirichlet3  n = 20: 0.031  0.035  0.036
+   qgauss1     n =  2: 0.819  0.819  0.819
+   qgauss1     n =  5: 0.524  0.524  0.524
+   qgauss1     n = 10: 0.356  0.356  0.356
+   qgauss1     n = 20: 0.345  0.273  0.302
+   largest difference between the first 100 and all 1000 models, over the 30 cells: 0.049
+   pure relay admitted: largest difference 0.057; dirichlet3 at n = 20: 0.602 on the first 100 models, 0.552 on 1000
+A. quantized Gaussian families, random configurations at n = 5: the median factor sits at a jump of the distribution
+   qgauss1: rho_F takes 19 values; 597 of the 1200 stages (49.75 %) have rho_F <= 0.341, the next value is 0.477; median 0.477
+   qgauss2: rho_F takes 19 values; 586 of the 1200 stages (48.83 %) have rho_F <= 0.159, the next value is 0.341; median 0.341
+B. second sample (seeds 1001, 1101, 1202)
+   configurations 92808 / 92808; with |rho| above 1: 0 / 0; largest |rho| - 1: 2.2e-16 / 4.4e-16; largest error of the product transfer: 8.3e-16 / 7.8e-16 (checked in 92808 / 92808 configurations)
+   median product of the random configurations: the second median lies inside the 95 % interval of the first in 46 of the 56 cells (82 %; expected for two independent estimates and an interval of level 95.7 %: 85 %)
+   largest factor between the two medians at n = 2, 5, 10, 20: 1.15, 1.63, 1.86, 2.97; quantized Gaussian families: 1.00, 1.26, 1.79, 5.97
+   Dirichlet K=3 at n = 5: 0.0144 and 0.0135
+   per-stage factor of the random configurations at n = 5 (first / second sample): median, 10th and 90th percentiles, fraction above 0.9
+      running        0.200 / 0.200   0.100 / 0.100   0.900 / 0.900   0.000 / 0.000
+      dirichlet3     0.432 / 0.436   0.077 / 0.067   0.883 / 0.878   0.087 / 0.079
+      dirichlet5     0.410 / 0.386   0.061 / 0.055   0.892 / 0.886   0.092 / 0.090
+      dirichlet10    0.386 / 0.381   0.045 / 0.039   0.821 / 0.833   0.060 / 0.056
+      qgauss1        0.477 / 0.341   0.001 / 0.001   0.841 / 0.954   0.086 / 0.107
+      qgauss2        0.341 / 0.341   0.001 / 0.001   0.841 / 0.841   0.076 / 0.080
+      gauss0.5       0.462 / 0.473   0.091 / 0.101   0.774 / 0.783   0.026 / 0.033
+      gauss1         0.475 / 0.466   0.104 / 0.083   0.807 / 0.797   0.039 / 0.033
+      gauss2         0.484 / 0.477   0.109 / 0.093   0.843 / 0.847   0.061 / 0.058
+      gauss3         0.480 / 0.523   0.086 / 0.102   0.870 / 0.871   0.072 / 0.077
+      swerling_snr1  0.455 / 0.457   0.086 / 0.096   0.844 / 0.826   0.042 / 0.044
+      swerling_snr3  0.469 / 0.478   0.092 / 0.106   0.850 / 0.859   0.061 / 0.062
+      swerling_snr10 0.478 / 0.500   0.093 / 0.091   0.880 / 0.901   0.081 / 0.104
+      logistic2      0.490 / 0.461   0.103 / 0.111   0.831 / 0.807   0.051 / 0.040
+      twelve families other than the quantized Gaussian ones: largest change of the median 0.043 (gauss3), of the 10th percentile 0.021, of the 90th 0.024, of the fraction above 0.9 0.023
+   optimal designs, median factor at n = 5 (first / second sample):
+      running        0.900 / 0.900   (fixed model: the same designs)
+      dirichlet3     0.876 / 0.849
+      dirichlet5     0.785 / 0.788
+      gauss0.5       0.594 / 0.594   (fixed model: the same designs)
+      gauss1         0.575 / 0.575   (fixed model: the same designs)
+      gauss2         0.475 / 0.475   (fixed model: the same designs)
+      gauss3         0.373 / 0.373   (fixed model: the same designs)
+      swerling_snr1  0.979 / 0.979   (fixed model: the same designs)
+      swerling_snr3  0.991 / 0.991   (fixed model: the same designs)
+      swerling_snr10 0.999 / 0.999   (fixed model: the same designs)
+      logistic2      0.482 / 0.482   (fixed model: the same designs)
+      largest change over the sampled families: 0.028; median product of the optimal designs, Dirichlet K=3 at n = 5: 0.122 and 0.126
+   relay-like adversary, median product at n = 2, 5, 10, 20 (first sample with its 95 % interval / second sample):
+      running      0.90 [0.90, 0.90] / 0.90;  0.66 [0.66, 0.66] / 0.66;  0.39 [0.39, 0.39] / 0.39;  0.14 [0.14, 0.14] / 0.14
+      dirichlet3   0.82 [0.81, 0.83] / 0.83;  0.45 [0.44, 0.46] / 0.45;  0.19 [0.18, 0.20] / 0.19;  0.036 [0.034, 0.038] / 0.033
+      dirichlet5   0.84 [0.82, 0.85] / 0.85;  0.54 [0.53, 0.56] / 0.53;  0.34 [0.33, 0.36] / 0.35;  0.17 [0.16, 0.17] / 0.16
+      dirichlet10  0.78 [0.77, 0.80] / 0.78;  0.53 [0.51, 0.54] / 0.53;  0.40 [0.39, 0.41] / 0.40;  0.31 [0.29, 0.32] / 0.32
+      qgauss1      0.82 [0.82, 0.82] / 0.82;  0.52 [0.52, 0.52] / 0.52;  0.36 [0.36, 0.36] / 0.36;  0.30 [0.30, 0.30] / 0.30
+      qgauss2      0.82 [0.82, 0.82] / 0.82;  0.62 [0.62, 0.62] / 0.62;  0.59 [0.59, 0.59] / 0.59;  0.57 [0.57, 0.57] / 0.57
+      Dirichlet families: the second median lies inside the interval of the first in 10 of the 12 cells (expected: 84 %); largest change over all cells 0.018
+   pure relay admitted, median product at n = 2, 5, 10, 20 (first sample with its 95 % interval / second sample):
+      running      0.90 [0.90, 0.90] / 0.90;  0.90 [0.90, 0.90] / 0.90;  0.90 [0.90, 0.90] / 0.90;  0.90 [0.90, 0.90] / 0.90
+      dirichlet3   0.93 [0.90, 0.94] / 0.93;  0.70 [0.68, 0.72] / 0.71;  0.60 [0.58, 0.62] / 0.61;  0.55 [0.53, 0.57] / 0.55
+      dirichlet5   0.85 [0.83, 0.87] / 0.87;  0.62 [0.60, 0.64] / 0.61;  0.50 [0.48, 0.52] / 0.52;  0.47 [0.45, 0.49] / 0.46
+      dirichlet10  0.78 [0.77, 0.80] / 0.78;  0.53 [0.52, 0.55] / 0.54;  0.43 [0.42, 0.45] / 0.43;  0.37 [0.35, 0.38] / 0.38
+      qgauss1      0.82 [0.82, 0.82] / 0.82;  0.52 [0.52, 0.52] / 0.52;  0.36 [0.36, 0.36] / 0.36;  0.30 [0.30, 0.30] / 0.30
+      qgauss2      0.82 [0.82, 0.82] / 0.82;  0.62 [0.62, 0.62] / 0.62;  0.59 [0.59, 0.59] / 0.59;  0.57 [0.57, 0.57] / 0.57
+      Dirichlet families: the second median lies inside the interval of the first in 11 of the 12 cells; largest change over all cells 0.020; share of the nodes that relay, Dirichlet K=3 at n = 20: 0.80 / 0.80
+
+=== exp2: tandem versus parallel (Section IV-D, Fig. 2, Tables SIII-SIV) ===
+text. parallel designs whose two supporting strategies differ in the threshold of a single LD, n = 3..6: 77.4, 80.2, 82.3, 82.0 % (of no LD, the fusion rule alone: 7.6, 3.5, 2.0, 1.3 %);  pairs per model at a position: 1.24 to 1.41
+A. median ratio at node k: the five blocks of 200 models (B: first sample with its bootstrap interval / second sample, --seed=1002)
+   n = 3, k = 1: blocks 1.01, 0.67, 0.98, 0.88, 1.04;   0.97 [0.83, 1.05] / 0.90 [0.75, 1.02]   pairs 215 / 211   signed-rank p for tandem smaller 1.7e-03 / 9.6e-03
+   n = 3, k = 2: blocks 0.90, 0.99, 0.98, 1.04, 0.83;   0.97 [0.85, 1.08] / 1.01 [0.87, 1.29]   pairs 476 / 542   signed-rank p for tandem smaller 3.8e-01 / 6.1e-01
+   n = 4, k = 1: blocks 0.59, 0.81, 1.00, 0.65, 0.98;   0.85 [0.67, 0.99] / 0.87 [0.69, 1.01]   pairs 184 / 174   signed-rank p for tandem smaller 1.3e-04 / 7.4e-04
+   n = 4, k = 2: blocks 0.83, 1.02, 0.72, 0.71, 0.67;   0.79 [0.68, 0.94] / 0.84 [0.77, 0.93]   pairs 558 / 570   signed-rank p for tandem smaller 1.9e-05 / 2.2e-05
+   n = 4, k = 3: blocks 1.67, 1.84, 1.32, 1.09, 1.18;   1.40 [1.15, 1.69] / 1.35 [1.14, 1.60]   pairs 677 / 694   signed-rank p for tandem smaller 1.0e+00 / 1.0e+00
+   n = 5, k = 1: blocks 0.53, 0.70, 1.05, 0.99, 1.06;   0.98 [0.78, 1.03] / 0.98 [0.86, 1.17]   pairs 135 / 138   signed-rank p for tandem smaller 6.2e-03 / 1.9e-01
+   n = 5, k = 2: blocks 0.70, 0.58, 0.54, 0.78, 0.57;   0.63 [0.52, 0.73] / 0.57 [0.47, 0.66]   pairs 569 / 572   signed-rank p for tandem smaller 1.0e-15 / 2.9e-23
+   n = 5, k = 3: blocks 1.51, 1.40, 0.97, 1.20, 1.48;   1.30 [1.08, 1.54] / 1.28 [1.10, 1.47]   pairs 740 / 721   signed-rank p for tandem smaller 9.9e-01 / 1.0e+00
+   n = 5, k = 4: blocks 2.42, 2.19, 1.87, 1.89, 2.64;   2.18 [1.77, 2.63] / 2.05 [1.82, 2.44]   pairs 651 / 656   signed-rank p for tandem smaller 1.0e+00 / 1.0e+00
+   n = 6, k = 1: blocks 0.86, 0.72, 1.23, 0.91, 1.08;   1.02 [0.85, 1.12] / 1.01 [0.73, 1.20]   pairs 103 / 103   signed-rank p for tandem smaller 1.4e-01 / 3.4e-02
+   n = 6, k = 2: blocks 0.60, 0.40, 0.45, 0.31, 0.40;   0.42 [0.35, 0.50] / 0.41 [0.33, 0.48]   pairs 538 / 539   signed-rank p for tandem smaller 3.8e-33 / 5.6e-36
+   n = 6, k = 3: blocks 1.14, 0.78, 0.67, 0.61, 0.96;   0.87 [0.74, 0.99] / 0.90 [0.80, 1.00]   pairs 682 / 653   signed-rank p for tandem smaller 2.4e-03 / 3.1e-02
+   n = 6, k = 4: blocks 2.07, 1.48, 0.76, 1.07, 1.70;   1.41 [1.14, 1.62] / 1.57 [1.32, 1.84]   pairs 656 / 639   signed-rank p for tandem smaller 1.0e+00 / 1.0e+00
+   n = 6, k = 5: blocks 2.64, 3.00, 2.12, 1.91, 3.57;   2.62 [2.19, 2.92] / 2.83 [2.37, 3.45]   pairs 575 / 604   signed-rank p for tandem smaller 1.0e+00 / 1.0e+00
+B. the second median lies inside the interval of the first at 14 of the 14 positions, the first inside the interval of the second at 14
+   second and later nodes of chains of four to six nodes (9 positions): interval on its side of one at 9 / 9 positions
+   first node, share of the pairs with a ratio below 0.5, n = 3..6: 0.27, 0.34, 0.32, 0.24 / 0.27, 0.32, 0.27, 0.31
+   first node, share with a ratio above 2, n = 3..6: 0.13, 0.17, 0.13, 0.14 / 0.16, 0.17, 0.18, 0.11
+   first node, geometric mean of the ratio, n = 3..6: 0.74, 0.71, 0.64, 0.74 / 0.79, 0.69, 0.85, 0.72
+   median synchronized P_D, tandem, n = 3..6: 0.60, 0.66, 0.69, 0.71 / 0.62, 0.68, 0.71, 0.73
+   median synchronized P_D, parallel, n = 3..6: 0.61, 0.70, 0.77, 0.83 / 0.63, 0.72, 0.80, 0.85
+   median parallel single-LD shift, n = 3..6: 0.0174, 0.0122, 0.0094, 0.0075 / 0.0185, 0.0130, 0.0101, 0.0082
+   n = 3, median tandem shift at k = 1..2: 0.0150, 0.0224 / 0.0156, 0.0222;  susceptible cases: 267, 863 / 267, 921
+   n = 4, median tandem shift at k = 1..3: 0.0121, 0.0125, 0.0219 / 0.0115, 0.0124, 0.0212;  susceptible cases: 217, 888, 1156 / 222, 936, 1202
+   n = 5, median tandem shift at k = 1..4: 0.0131, 0.0071, 0.0145, 0.0204 / 0.0129, 0.0064, 0.0145, 0.0205;  susceptible cases: 172, 929, 1250, 1075 / 178, 872, 1181, 1113
+   n = 6, median tandem shift at k = 1..5: 0.0197, 0.0037, 0.0092, 0.0129, 0.0200 / 0.0111, 0.0037, 0.0094, 0.0139, 0.0189;  susceptible cases: 133, 831, 1122, 1137, 1004 / 138, 856, 1073, 1086, 1042
+   immune designs, tandem, n = 3..6: 0.70, 0.55, 0.42, 0.34 / 0.68, 0.52, 0.41, 0.33
+   immune designs, parallel, n = 3..6: 0.51, 0.45, 0.44, 0.42 / 0.50, 0.45, 0.44, 0.42
+   worst switching node, median ratio, n = 3..6: 1.08, 1.28, 1.65, 1.56 / 1.11, 1.27, 1.64, 1.66
+   wrong rule at N_1 against the worst parallel LD, median ratio, n = 3..6: 0.78, 0.61, 0.69, 0.76 / 0.79, 0.69, 0.73, 0.67
+B. first realization enumerated (--first-realization), first / second sample (--seed=1002)
+   designs in which N_1 is a susceptible switching node, n = 3..6: 851, 571, 430, 335 / 805, 553, 418, 289
+   immune designs, tandem: 0.53, 0.45, 0.37, 0.30 / 0.52, 0.44, 0.36, 0.30
+   immune designs, parallel: 0.44, 0.42, 0.42, 0.41 / 0.44, 0.42, 0.42, 0.41
+   median ratio at N_1: 0.53, 0.50, 0.43, 0.55 / 0.56, 0.53, 0.60, 0.56
+   median ratio at N_2 (n = 4, 5, 6): 0.76, 0.66, 0.47 / 0.78, 0.62, 0.46
+   median ratio next to the fusion node (n = 4, 5, 6): 1.26, 1.82, 2.21 / 1.26, 1.86, 2.26
+   the second median lies inside the interval of the first at 13 of the 14 positions
+
+=== exp3: several desynchronized nodes (Section IV-F, Fig. S2) ===
+A. optimal designs, first 30 of the 300 models: 87 designs, 155 cases, 9 with |S| = 4; median |W_F - alpha| for |S| = 1..4: 2.3e-04, 2.3e-03, 6.7e-03, 9.0e-03; pooled shift / bound 0.038
+   over the 10 disjoint blocks of 30 models: |S| = 1: 1.0e-04 to 5.5e-04; |S| = 2: 2.3e-03 to 8.9e-03; |S| = 3: 6.6e-03 to 1.6e-02; |S| = 4: 9.0e-03 to 4.3e-02; pooled shift / bound 0.029 to 0.069; cases with |S| = 4: 6 to 11; largest / smallest block median: 5.5, 3.9, 2.5, 4.8
+   all models: 2.1e-04, 4.4e-03, 1.3e-02, 2.0e-02; pooled shift / bound 0.048
+B. second sample (seed 1003): first / second
+   random |S| = 1: cases 300 / 300; median |W_F - alpha| 3.6e-04 / 2.4e-04; p90 0.023 / 0.018; max 0.128 / 0.110; median shift / bound 0.394 / 0.350
+   random |S| = 2: cases 300 / 300; median |W_F - alpha| 2.3e-03 / 3.3e-03; p90 0.042 / 0.039; max 0.220 / 0.169; median shift / bound 0.262 / 0.296
+   random |S| = 3: cases 300 / 300; median |W_F - alpha| 4.5e-03 / 7.0e-03; p90 0.049 / 0.045; max 0.196 / 0.151; median shift / bound 0.244 / 0.222
+   random |S| = 4: cases 300 / 300; median |W_F - alpha| 9.9e-03 / 9.1e-03; p90 0.064 / 0.051; max 0.183 / 0.157; median shift / bound 0.215 / 0.193
+   random pooled: median shift / bound 0.254 / 0.250; largest shift 0.220 / 0.169
+   design |S| = 1: cases 831 / 833; median |W_F - alpha| 2.1e-04 / 3.3e-04; p90 0.015 / 0.017; max 0.105 / 0.146; median shift / bound 0.017 / 0.018
+   design |S| = 2: cases 437 / 453; median |W_F - alpha| 4.4e-03 / 5.1e-03; p90 0.042 / 0.044; max 0.164 / 0.125; median shift / bound 0.062 / 0.064
+   design |S| = 3: cases 196 / 209; median |W_F - alpha| 1.3e-02 / 1.6e-02; p90 0.058 / 0.057; max 0.164 / 0.103; median shift / bound 0.086 / 0.081
+   design |S| = 4: cases 79 / 74; median |W_F - alpha| 2.0e-02 / 2.1e-02; p90 0.069 / 0.058; max 0.107 / 0.103; median shift / bound 0.093 / 0.092
+   design pooled: median shift / bound 0.048 / 0.052; largest shift 0.164 / 0.146
+   designs with a switching node among N_1..N_7: 831 / 833; switching nodes per design 1.87 / 1.93
+
+=== exp4: position of the desynchronized node (Section IV-F) ===
+A. random pairs, k = 1: median |W_F - alpha| 6.1e-07, 95 % interval [5.6e-17, 7.1e-06]; 146 of the 300 shifts are zero (below 1e-12)
+A. random pairs, k = 7: median |W_F - alpha| 7.2e-03, 95 % interval [4.8e-03, 1.1e-02]; 72 of the 300 shifts are zero (below 1e-12)
+B. second sample (seed 1004), k = 1: median |W_F - alpha| 6.1e-07 / 7.7e-07; zero shifts 0.487 / 0.477; median downstream product 0.013 / 0.012
+B. second sample (seed 1004), k = 7: median |W_F - alpha| 7.2e-03 / 7.8e-03; zero shifts 0.240 / 0.257; median downstream product 0.642 / 0.623
+   largest |exact - eq. (14)|: 2.8e-16 / 2.9e-16
+
+=== exp5: single-node failures of susceptible designs (Table SVI) ===
+A. n = 2: 20000 cases from 20000 susceptible designs (1.00 per design); binomial standard error of a share of all cases: at most 0.35 points
+A. n = 3: 20000 cases from 13824 susceptible designs (1.45 per design); binomial standard error of a share of all cases: at most 0.35 points
+A. n = 4: 20000 cases from 10994 susceptible designs (1.82 per design); binomial standard error of a share of all cases: at most 0.35 points
+B. second sample (seed 1005): first / second, n = 2, 3, 4
+   cases                                    20000 / 20000;  20000 / 20000;  20000 / 20001
+   susceptible designs                      20000 / 20000;  13824 / 13824;  10994 / 11038
+   randomized designs                       114206 / 110623;  41972 / 41479;  26546 / 26508
+   P_F rises                                0.795 / 0.794;  0.754 / 0.759;  0.717 / 0.725
+   median |W_F - alpha|                     0.0133 / 0.0133;  0.0084 / 0.0088;  0.0061 / 0.0062
+   largest |W_F - alpha|                    0.179 / 0.208;  0.204 / 0.191;  0.193 / 0.215
+   rule of the DFC switches                 1.000 / 1.000;  0.601 / 0.597;  0.398 / 0.412
+   adjustment meets the constraint          1.000 / 1.000;  0.933 / 0.930;  0.917 / 0.907
+     when P_F rises                         1.000 / 1.000;  0.913 / 0.909;  0.885 / 0.874
+   it equals the DFC-layer optimum          0.357 / 0.355;  0.422 / 0.420;  0.405 / 0.403
+   it equals the downstream optimum         0.357 / 0.355;  0.340 / 0.339;  0.283 / 0.290
+   median gap to the DFC-layer optimum      1.0e-03 / 9.7e-04;  3.3e-04 / 3.3e-04;  1.9e-04 / 2.0e-04
+   median gap to the downstream optimum     1.0e-03 / 9.7e-04;  1.3e-03 / 1.2e-03;  1.3e-03 / 1.2e-03
+   largest gap                              0.37 / 0.26;  0.33 / 0.35;  0.35 / 0.41
+   DFC rule does not switch: P_F > alpha    -;  0.732 / 0.740;  0.714 / 0.720
+   below G: adjustment                      0.185 / 0.184;  0.354 / 0.350;  0.406 / 0.403
+   below G: DFC-layer optimum               0.085 / 0.085;  0.305 / 0.306;  0.438 / 0.443
+   below G: downstream optimum              0.085 / 0.085;  0.231 / 0.227;  0.317 / 0.317
+   largest change of a share: 1.4 points
+   n = 2, cases by failing node (N_1): 20000 / 20000
+   n = 3, cases by failing node (N_1 to N_2): 8319, 11681 / 8390, 11610
+   n = 4, cases by failing node (N_1 to N_3): 5091, 7952, 6957 / 5008, 7998, 6995
+
+=== exp7: nominal piecewise-linear model of Proposition 3 (knots 0, 0.1, 0.2, 1) ===
+text. largest gap between the hull and the deterministic envelope on each hull edge (2001 values of alpha per edge):
+   [0, 0.01]: 5.6e-17;  [0.01, 0.02]: 5.6e-17;  [0.02, 0.04]: 5.6e-17;  [0.04, 0.11]: 7.1e-03;  [0.11, 0.19]: 1.1e-16;  [0.19, 0.28]: 1.1e-16;  [0.28, 0.36]: 1.1e-16;  [0.36, 1]: 1.1e-16
+A. a share p of the 415 perturbed models has the binomial standard error sqrt(p (1 - p) / 415): 2.2 points at 70 %, 2.1 points at 24 %
+
+=== exp8: direction of the shift on two-node chains (Section IV-E) ===
+B. second sample (seed 1000): first / second
+   hull edges                                                         26825 / 26839
+   chains with a susceptible edge                                     1825 / 1839
+   P_F rises                                                          928 / 912
+   P_F falls                                                          897 / 927
+   pairs of realizations                                              46825 / 46839
+     unchanged                                                        0.842 / 0.841
+     rise                                                             0.113 / 0.112
+     fall                                                             0.045 / 0.047
+   with the trivial edges: unchanged                                  0.569 / 0.569
+     rise                                                             0.234 / 0.233
+     fall                                                             0.197 / 0.198
+   susceptible designs with nested regions and a feasible adjustment  1825 / 1839
+   susceptible pairs of realizations                                  7412 / 7446
+     feasible                                                         7412 / 7446
+
+=== exp9: PBPO (Table SI) ===
+text. best of 20 initializations: 234 of the 2255 vertices are missed, 190 of them the first or last vertex of a hull or within two positions of it
+A. best of 20 initializations over the 5 disjoint blocks of 20 chains: mid-hull vertices 94.1, 94.1, 97.4, 95.1, 94.9 %; all vertices 88.2, 88.1, 93.0, 89.3, 89.8 %
+   supporting lambda at the first vertex of the 100 hulls: median 332, above 1e3 in 27, largest 2.2e+05
+B. second sample (seed 1009): first / second
+   hull vertices                                      2255 / 2182
+   first or last vertices                             200 / 200
+   single initialization, mid-hull: median hit rate   0.367 / 0.367
+     25th percentile                                  0.167 / 0.167
+     75th percentile                                  0.567 / 0.600
+   single initialization, end vertices: median        0.000 / 0.000
+     90th percentile                                  0.100 / 0.133
+   best of 20, mid-hull vertices                      0.951 / 0.944
+   best of 20, all vertices                           0.896 / 0.896
+   mean sweeps of a single run                        2.60 / 2.54
+   largest number of sweeps, best of 20               7 / 7
+   largest number of sweeps, single runs              6 / 7
+   fixed point at every vertex                        1.000 / 1.000
+   regions kept: median hit rate                      0.033 / 0.033
+   regions kept: best of 20, mid-hull                 0.595 / 0.614
+   regions kept: best of 20, all vertices             0.553 / 0.567
+   regions kept: mean sweeps                          1.98 / 1.97
+
+=== exp11: Monte Carlo check; exp13: delayed message ===
+B. second run (seeds 1011, 1003): largest deviation over the 12 estimates 1.20 / 2.84 standard errors (second run: three-node running model, alpha = 0.078, N2 desynchronized); root mean square of the 24 deviations of the two runs 0.98
+   for twelve independent standard normal deviations the largest is below 1.20 with probability 0.04 and above 2.84 with probability 0.05
+   estimator of p': mean 0.4999 / 0.4992, standard deviation 0.0395 / 0.0390 (predicted 0.0400)
+B. second sample (seed 1013): cases 3200 / 3200; largest |exact - block form of eq. (13)| 2.8e-16 / 2.7e-16

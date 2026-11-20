@@ -1,0 +1,16 @@
+exp3_multinode.py with rng: seed 1003 (instead of 3); output in results/second_seed
+random ensemble done in 0.8s
+design ensemble done in 1455.8s
+number of switching nodes (excluding the DFC) in optimal designs: {'n': 833, 'mean': 1.929171668667467, 'median': 2.0, 'p10': 1.0, 'p25': 1.0, 'p75': 3.0, 'p90': 3.0, 'min': 1.0, 'max': 6.0}
+random: 1200 cases, 1084 with a positive bound; median shift / bound over them 0.250; largest shift 0.169
+design: 1569 cases, 1569 with a positive bound; median shift / bound over them 0.052; largest shift 0.146
+
+|S|  ensemble  count  median|dPF|   p90|dPF|   max|dPF|   median bound   median ratio  violations
+random|S|=1        300  0.00024   0.01813   0.11001   0.00127      0.148       0
+random|S|=2        300  0.00333   0.03904   0.16858   0.01493      0.275       0
+random|S|=3        300  0.00704   0.04511   0.15134   0.03699      0.217       0
+random|S|=4        300  0.00908   0.05108   0.15746   0.05645      0.191       0
+design|S|=1        833  0.00033   0.01711   0.14621   0.03152      0.018       0
+design|S|=2        453  0.00506   0.04385   0.12525   0.09684      0.064       0
+design|S|=3        209  0.01577   0.05731   0.10282   0.17765      0.081       0
+design|S|=4         74  0.02133   0.05835   0.10282   0.19310      0.092       0
