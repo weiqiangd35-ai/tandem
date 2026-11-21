@@ -1,0 +1,70 @@
+{
+ "N_models": 5000,
+ "K": 3,
+ "designs": {
+  "edges": 26825,
+  "counts": {
+   "immune": 25000,
+   "fall": 897,
+   "rise": 928
+  },
+  "fractions": {
+   "immune": 0.9319664492078286,
+   "fall": 0.033438956197576884,
+   "rise": 0.034594594594594595
+  }
+ },
+ "all_single_threshold_realization_pairs": {
+  "edges": 26825,
+  "realization_pairs": 46825,
+  "counts": {
+   "unchanged": 39413,
+   "rise": 5290,
+   "fall": 2122
+  },
+  "fractions": {
+   "unchanged": 0.841708489054992,
+   "rise": 0.11297383876134544,
+   "fall": 0.045317672183662575
+  }
+ },
+ "all_pairs_including_trivial_edges": {
+  "edges": 36825,
+  "realization_pairs": 86825,
+  "counts": {
+   "rise": 20290,
+   "unchanged": 49413,
+   "fall": 17122
+  },
+  "fractions": {
+   "rise": 0.23368845378635186,
+   "unchanged": 0.5691102792974374,
+   "fall": 0.19720126691621076
+  }
+ },
+ "proposition_7": {
+  "susceptible realization pairs": 7412,
+  "realization pairs feasible": 7412,
+  "susceptible designs": 1825,
+  "trivial N1 rule": 0,
+  "regions nested as in Prop. 7": 1825,
+  "adjustment feasible": 1825,
+  "P_F restored to alpha": 1825
+ },
+ "models_with_a_susceptible_edge": 1825,
+ "proposition_7_exact_arithmetic": {
+  "models": 20000,
+  "edges": 124229,
+  "pairs_with_a_trivial_N1_rule": 277549,
+  "trivial_alpha_between_LF_and_UF": 269953,
+  "pairs": 68668,
+  "regions_nested_as_in_prop7": 68668,
+  "alpha_between_LF_and_UF": 68668,
+  "one_dfc_ignores_its_message": 37396,
+  "PF_rises": 23312,
+  "PF_falls": 20843,
+  "qstar_in_unit_interval_and_exact": 44833,
+  "LF_equals_UF": 23835,
+  "LF_equals_UF_equals_alpha": 23835
+ }
+}

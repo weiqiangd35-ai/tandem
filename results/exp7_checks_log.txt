@@ -1,0 +1,10 @@
+draw 301, eps = 0.002: gap / eps = 0.1035; alpha refined around the maximum: 0.1035; uniform alpha grid of step 1e-3 on [0, 1]: 0.1035; 1601 and 3201 values of f: 0.1035, 0.1035
+draw 185, eps = 0.001: gap / eps = 0.1032; alpha refined around the maximum: 0.1037; uniform alpha grid of step 1e-3 on [0, 1]: 0.1032; 1601 and 3201 values of f: 0.1032, 0.1032
+draw 301, eps = 0.001: gap / eps = 0.0833; alpha refined around the maximum: 0.0833; uniform alpha grid of step 1e-3 on [0, 1]: 0.0833; 1601 and 3201 values of f: 0.0833, 0.0833
+draw 40, eps = 0.004: gap / eps = 0.0804; alpha refined around the maximum: 0.0805
+draw 40, eps = 0.002: gap / eps = 0.0726; alpha refined around the maximum: 0.0726
+draw 40, eps = 0.001: gap / eps = 0.0690; alpha refined around the maximum: 0.0691
+draw 143, eps = 0.004: gap / eps = 0.0657; alpha refined around the maximum: 0.0657
+draw 143, eps = 0.002: gap / eps = 0.0651; alpha refined around the maximum: 0.0651
+draw 143, eps = 0.001: gap / eps = 0.0616; alpha refined around the maximum: 0.0616
+largest relative changes: alpha_refined 0.53 %, alpha_uniform_1e-3 0.00 %, f_1601 0.00 %, f_3201 0.00 % ; largest ratio after refinement of alpha: 0.1037

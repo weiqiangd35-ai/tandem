@@ -1,0 +1,85 @@
+exp5_correction.py with rng: seed 1005 (instead of 5); output in results/second_seed
+
+=== running model, two nodes (P_F falls): alpha = 0.075
+  deterministic optimum G = (0.04000000000000001, 0.48999999999999994)
+  single-node randomization S = (0.07500, 0.56875): N2 alone randomizes, Strategy(j1=1, pairs=((3, 1),)) with probability 0.5625, else Strategy(j1=1, pairs=((2, 1),))
+  A = (0.04, 0.49)  B = (0.11, 0.66)  p = 0.5000  C = (0.075, 0.575)
+  strategies: A = Strategy(j1=1, pairs=((3, 1),)), B = Strategy(j1=2, pairs=((2, 1),)); switching nodes (1..n-1): [1]; rule of the final LD switches: True
+  N1 desynchronized: W = (0.07250, 0.56000), P_F - alpha = -0.00250
+    Prop. 5: -0.00250
+    L = (0.11500, 0.66500), U = (0.03000, 0.45500)
+    adjustment: q* = 0.4706 -> (0.07500, 0.56618)
+    DFC-layer optimum P_D = 0.56618; downstream optimum P_D = 0.56618
+
+=== constraint-violating model, two nodes (P_F rises): alpha = 0.21125
+  deterministic optimum G = (0.0975, 0.19)
+  single-node randomization S = (0.21125, 0.31986): N1 alone randomizes, Strategy(j1=2, pairs=((2, 1),)) with probability 0.4550, else Strategy(j1=1, pairs=((2, 1),))
+  A = (0.0975, 0.19)  B = (0.325, 0.4575)  p = 0.5000  C = (0.21125, 0.32375)
+  strategies: A = Strategy(j1=2, pairs=((2, 0),)), B = Strategy(j1=1, pairs=((2, 1),)); switching nodes (1..n-1): [1]; rule of the final LD switches: True
+  N1 desynchronized: W = (0.26750, 0.37188), P_F - alpha = +0.05625
+    Prop. 5: +0.05625
+    L = (0.20000, 0.30625), U = (0.33500, 0.43750)
+    adjustment: q* = 0.0833 -> (0.21125, 0.31719)
+    DFC-layer optimum P_D = 0.31730; downstream optimum P_D = 0.31730
+
+=== 5b: three-node running model, hull edges with a susceptible design
+
+=== running model, three nodes: alpha = 0.0075
+  deterministic optimum G = (0.004000000000000001, 0.294)
+  single-node randomization S = (0.00750, 0.34125): N2 alone randomizes, Strategy(j1=1, pairs=((3, 1), (3, 2))) with probability 0.5625, else Strategy(j1=1, pairs=((2, 1), (3, 2)))
+  A = (0.004, 0.294)  B = (0.011, 0.396)  p = 0.5000  C = (0.0075, 0.345)
+  strategies: A = Strategy(j1=2, pairs=((3, 1), (3, 1))), B = Strategy(j1=2, pairs=((2, 1), (3, 2))); switching nodes (1..n-1): [2]; rule of the final LD switches: True
+  N2 desynchronized: W = (0.00975, 0.35100), P_F - alpha = +0.00225
+    L = (0.00650, 0.32400), U = (0.01300, 0.37800)
+    adjustment: q* = 0.1538 -> (0.00750, 0.33231)
+    DFC-layer optimum P_D = 0.33231; downstream optimum P_D = 0.33231
+
+=== running model, three nodes: alpha = 0.078
+  deterministic optimum G = (0.07200000000000001, 0.6369999999999999)
+  single-node randomization S = (0.07800, 0.65432): N3 alone randomizes, Strategy(j1=2, pairs=((2, 0), (3, 1))) with probability 0.7368, else Strategy(j1=2, pairs=((2, 0), (3, 0)))
+  A = (0.038, 0.588)  B = (0.118, 0.768)  p = 0.5000  C = (0.078, 0.6779999999999999)
+  strategies: A = Strategy(j1=2, pairs=((2, 0), (3, 1))), B = Strategy(j1=2, pairs=((3, 1), (2, 0))); switching nodes (1..n-1): [2]; rule of the final LD switches: True
+  N2 desynchronized: W = (0.10775, 0.64650), P_F - alpha = +0.02975
+    L = (0.19450, 0.85200), U = (0.02100, 0.44100)
+    adjustment: q* = 0.6715 -> (0.07800, 0.57603)
+    DFC-layer optimum P_D = 0.58239; downstream optimum P_D = 0.58239
+
+=== running model, three nodes: alpha = 0.1675
+  deterministic optimum G = (0.136, 0.7959999999999999)
+  single-node randomization S = (0.16750, 0.82750): N2 alone randomizes, Strategy(j1=1, pairs=((3, 1), (2, 0))) with probability 0.5625, else Strategy(j1=1, pairs=((2, 1), (2, 0)))
+  A = (0.136, 0.7959999999999999)  B = (0.19899999999999998, 0.864)  p = 0.5000  C = (0.1675, 0.83)
+  strategies: A = Strategy(j1=1, pairs=((3, 1), (2, 0))), B = Strategy(j1=2, pairs=((2, 1), (2, 0))); switching nodes (1..n-1): [1, 2]; rule of the final LD switches: False
+  N1 desynchronized: W = (0.16525, 0.82400), P_F - alpha = -0.00225
+    L = (0.16525, 0.82400), U = (0.16525, 0.82400)
+    adjustment: q* = 0.0000 -> (0.16525, 0.82400)
+    DFC-layer optimum P_D = 0.82526; downstream optimum P_D = 0.82647
+  N2 desynchronized: W = (0.16525, 0.82400), P_F - alpha = -0.00225
+    L = (0.16525, 0.82400), U = (0.16525, 0.82400)
+    adjustment: q* = 0.0000 -> (0.16525, 0.82400)
+    DFC-layer optimum P_D = 0.82511; downstream optimum P_D = 0.82511
+
+=== 5c: random Dirichlet(1) K = 3 models, one failing node, cases = (design, failing node)
+  n=2: 110623 designs, 20000 susceptible (0.18); 20000 cases; P_F rises in 0.79, falls in 0.21; median |P_F shift| 0.0133
+        rule of the final LD switches in 1.00 of the cases; the adjustment then meets the constraint in 1.00; all rises restorable: 1.0
+        among those: equals the DFC-layer optimum in 0.35495, the downstream optimum in 0.35495; gap to DFC-layer median 9.73e-04 max 2.60e-01 (min -3.3e-16); to downstream median 9.73e-04 max 2.60e-01
+        cases by failing node: {'1': {'cases': 20000, 'frac_PF_rises': 0.79415}}
+        corrected P_D below the deterministic optimum G: adjustment 0.18 (of the cases it can restore), DFC-layer optimum 0.09, downstream optimum 0.09; median gain of randomization C_D - G_D 0.0612
+        best single-node randomization S (no common draw): C_D - S_D median 0.0021, 90% quantile 0.0105, max 0.0578; by design: median 0.0021, 90% quantile 0.0105, above 0.01 in 0.11; share of C_D - G_D that needs the common draw: median 0.041
+        S is attained with the final LD as the randomizing node in 0.64 of the designs (in 0.23 an upstream node attains the same value), only with an upstream node in 0.36; S is deterministic in 0.00
+        corrected P_D below S: adjustment 1.000 (of the cases it can restore), DFC-layer optimum 1.000, downstream optimum 1.000; median S_D - (DFC-layer optimum) 0.0057
+  n=3: 41479 designs, 13824 susceptible (0.33); 20000 cases; P_F rises in 0.76, falls in 0.24; median |P_F shift| 0.0088
+        rule of the final LD switches in 0.60 of the cases; the adjustment then meets the constraint in 0.93; all rises restorable: 0.5519831334826723
+        among those: equals the DFC-layer optimum in 0.42041771696074903, the downstream optimum in 0.3391249549873965; gap to DFC-layer median 3.35e-04 max 3.52e-01 (min -3.3e-16); to downstream median 1.24e-03 max 3.52e-01
+        cases by failing node: {'1': {'cases': 8390, 'frac_PF_rises': 0.7411203814064362}, '2': {'cases': 11610, 'frac_PF_rises': 0.7717484926787253}}
+        corrected P_D below the deterministic optimum G: adjustment 0.35 (of the cases it can restore), DFC-layer optimum 0.31, downstream optimum 0.23; median gain of randomization C_D - G_D 0.0308
+        best single-node randomization S (no common draw): C_D - S_D median 0.0017, 90% quantile 0.0104, max 0.0734; by design: median 0.0017, 90% quantile 0.0104, above 0.01 in 0.10; share of C_D - G_D that needs the common draw: median 0.068
+        S is attained with the final LD as the randomizing node in 0.41 of the designs (in 0.06 an upstream node attains the same value), only with an upstream node in 0.59; S is deterministic in 0.00
+        corrected P_D below S: adjustment 0.970 (of the cases it can restore), DFC-layer optimum 0.978, downstream optimum 0.950; median S_D - (DFC-layer optimum) 0.0097
+  n=4: 26508 designs, 11038 susceptible (0.42); 20001 cases; P_F rises in 0.73, falls in 0.27; median |P_F shift| 0.0062
+        rule of the final LD switches in 0.41 of the cases; the adjustment then meets the constraint in 0.91; all rises restorable: 0.3628715261016482
+        among those: equals the DFC-layer optimum in 0.4030789825970549, the downstream optimum in 0.2902275769745649; gap to DFC-layer median 2.03e-04 max 4.06e-01 (min -3.3e-16); to downstream median 1.17e-03 max 4.06e-01
+        cases by failing node: {'1': {'cases': 5008, 'frac_PF_rises': 0.7024760383386581}, '2': {'cases': 7998, 'frac_PF_rises': 0.7289322330582646}, '3': {'cases': 6995, 'frac_PF_rises': 0.7366690493209436}}
+        corrected P_D below the deterministic optimum G: adjustment 0.40 (of the cases it can restore), DFC-layer optimum 0.44, downstream optimum 0.32; median gain of randomization C_D - G_D 0.0166
+        best single-node randomization S (no common draw): C_D - S_D median 0.0013, 90% quantile 0.0093, max 0.0672; by design: median 0.0012, 90% quantile 0.0090, above 0.01 in 0.08; share of C_D - G_D that needs the common draw: median 0.090
+        S is attained with the final LD as the randomizing node in 0.32 of the designs (in 0.01 an upstream node attains the same value), only with an upstream node in 0.68; S is deterministic in 0.00
+        corrected P_D below S: adjustment 0.918 (of the cases it can restore), DFC-layer optimum 0.954, downstream optimum 0.915; median S_D - (DFC-layer optimum) 0.0089

@@ -1,0 +1,15 @@
+random ensemble done in 1.4s
+design ensemble done in 1620.7s
+number of switching nodes (excluding the DFC) in optimal designs: {'n': 831, 'mean': 1.874849578820698, 'median': 2.0, 'p10': 1.0, 'p25': 1.0, 'p75': 2.0, 'p90': 3.0, 'min': 1.0, 'max': 6.0}
+random: 1200 cases, 1094 with a positive bound; median shift / bound over them 0.254; largest shift 0.220
+design: 1543 cases, 1543 with a positive bound; median shift / bound over them 0.048; largest shift 0.164
+
+|S|  ensemble  count  median|dPF|   p90|dPF|   max|dPF|   median bound   median ratio  violations
+random|S|=1        300  0.00036   0.02344   0.12819   0.00119      0.217       0
+random|S|=2        300  0.00233   0.04240   0.21982   0.01751      0.241       0
+random|S|=3        300  0.00449   0.04908   0.19583   0.03773      0.232       0
+random|S|=4        300  0.00988   0.06445   0.18262   0.07057      0.214       0
+design|S|=1        831  0.00021   0.01519   0.10496   0.02864      0.017       0
+design|S|=2        437  0.00440   0.04173   0.16361   0.09598      0.062       0
+design|S|=3        196  0.01301   0.05809   0.16361   0.16715      0.086       0
+design|S|=4         79  0.02044   0.06850   0.10728   0.21025      0.093       0

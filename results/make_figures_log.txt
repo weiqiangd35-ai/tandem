@@ -1,0 +1,3 @@
+wrote fig_exp1_attenuation.png
+wrote fig_exp2_tandem_vs_parallel.png
+wrote fig_exp3_exp4.png

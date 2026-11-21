@@ -1,0 +1,114 @@
+{
+ "draws": 415,
+ "eps0": {
+  "gap_ge_1e-3": 291,
+  "concave": 101,
+  "between": 23,
+  "max": 0.00843553321718904
+ },
+ "exact_rational_check": {
+  "zero_on_every_edge": 101,
+  "agrees_with_the_classification": true,
+  "smallest_positive": 2.438975004221322e-05
+ },
+ "middle_slope": {
+  "all_concave_below": 0.7280876648722995,
+  "draws_below": 81,
+  "none_concave_above": 0.8085575621231823,
+  "draws_above": 298,
+  "range": [
+   0.41528188237645436,
+   1.788739808291753
+  ],
+  "rounded": {
+   "below": 0.72,
+   "draws_below": 79,
+   "concave_below": 79,
+   "above": 0.81,
+   "draws_above": 298,
+   "concave_above": 0
+  }
+ },
+ "eps004": {
+  "gap_ge_1e-3": 296,
+  "max": 0.008039883169893791,
+  "from_ge_to_below_1e-3": 7,
+  "from_below_to_ge_1e-3": 12
+ },
+ "concave": {
+  "gap_eps004": [
+   7.912412918975598e-05,
+   0.00015537706884538593,
+   0.0003217704946200106
+  ],
+  "gap_over_eps_max": 0.10347445521602383,
+  "gap_over_eps_median": [
+   0.04253129548292822,
+   0.04133281053853022,
+   0.038844267211346484
+  ],
+  "gap_over_eps_max_by_eps": [
+   0.10316838808765993,
+   0.10347445521602383,
+   0.08044262365500265
+  ],
+  "gap_over_eps_min_by_eps": [
+   0.03984580887894662,
+   0.011453139822759084,
+   0.019781032297438994
+  ],
+  "largest_at": {
+   "draw": 301,
+   "eps": 0.002,
+   "alpha": 0.086
+  },
+  "draws_above_0.1_eps": 2,
+  "alpha_of_the_gap": [
+   0.072,
+   0.109
+  ],
+  "proportional": 98,
+  "ratios_of_the_proportional": [
+   1.8315313828220192,
+   2.2149496131645585
+  ],
+  "not_proportional": {
+   "draws": [
+    185,
+    301,
+    308
+   ],
+   "middle_slopes": [
+    0.41528188237645436,
+    0.42619113435586925,
+    0.41754605881463186
+   ],
+   "largest_middle_slope": 0.42619113435586925,
+   "smallest_middle_slope_of_the_others": 0.4371173604735285
+  }
+ },
+ "nominal_other_edges": [
+  {
+   "eps": 0.001,
+   "gap_over_eps": 0.15848969184872885,
+   "alpha": 0.0299,
+   "max_gap": 0.0070333189392916,
+   "gap_over_eps_on_the_grid_of_the_knots": 0.14656657448597343
+  },
+  {
+   "eps": 0.002,
+   "gap_over_eps": 0.12977864348667767,
+   "alpha": 0.029,
+   "max_gap": 0.006906290930351888,
+   "gap_over_eps_on_the_grid_of_the_knots": 0.12559015868229828
+  },
+  {
+   "eps": 0.004,
+   "gap_over_eps": 0.08933363039059783,
+   "alpha": 0.0278,
+   "max_gap": 0.006607703421126265,
+   "gap_over_eps_on_the_grid_of_the_knots": 0.0882989119882216
+  }
+ ],
+ "alpha_grid": "0 to 0.2 in steps of 1e-3, to 0.4 in steps of 5e-3, to 1 in steps of 0.05"
+}
